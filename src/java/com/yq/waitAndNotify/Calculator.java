@@ -1,4 +1,4 @@
-package com.yq.waitforNotify;
+package com.yq.waitAndNotify;
 
 public class Calculator {
     private int total = 0;
@@ -12,7 +12,7 @@ public class Calculator {
             notifyAll();
         }
 
-        //如果不lock对象就调用notifyAll， 会有IllegalMonitorStateException
+        //如果lock对象就调用notifyAll， 会有IllegalMonitorStateException
         //notifyAll();
     }
 
