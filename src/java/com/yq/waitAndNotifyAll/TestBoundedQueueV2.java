@@ -9,9 +9,8 @@ public class TestBoundedQueueV2 {
     public static void main(String[] args) {
         final MyBoundedQueueV2 queue = new MyBoundedQueueV2();
         ExecutorService exeSvc = Executors.newFixedThreadPool(11);
-        for (int i = 0; i < 1; i++)
+        for (int i = 0; i < 1; i++) {
             exeSvc.execute(new Runnable() {
-
                 @Override
                 public void run() {
                     while (true) {
@@ -27,6 +26,8 @@ public class TestBoundedQueueV2 {
                     }
                 }
             });
+        }
+
 
         for (int i = 0; i < 10; i++) {
             exeSvc.execute(new Runnable() {

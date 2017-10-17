@@ -11,7 +11,6 @@ public class TestBoundedQueueV1 {
         ExecutorService exeSvc = Executors.newFixedThreadPool(11);
         for (int i = 0; i < 1; i++)
             exeSvc.execute(new Runnable() {
-
                 @Override
                 public void run() {
                     while (true) {
