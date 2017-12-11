@@ -8,7 +8,7 @@ public class Calculator {
             for (int i = 0; i < 10; i++) {
                 total += i;
             }
-            // notify all the objects, which wait for this object
+            // notify all the objects, which waits for this object
             notifyAll();
         }
 

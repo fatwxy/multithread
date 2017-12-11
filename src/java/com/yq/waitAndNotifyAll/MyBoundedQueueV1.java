@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class MyBoundedQueueV1 {
     private final int MAX = 5;
-    private final ArrayList<Integer> list = new ArrayList<>();
+    private final ArrayList<Integer> list = new ArrayList<Integer>();
     synchronized void put(int v) throws InterruptedException {
         if (list.size() == MAX) {
             wait();
